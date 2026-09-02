@@ -1,0 +1,17 @@
+{
+  "brand_name": "Snagged",
+  "templates": {
+    "1_cod_verification_immediate": "Hey {{customer_name}}! 👋 Thank you for choosing Snagged! 🚀 We received your Cash on Delivery order ({{order_id}}) for the Snagged™ 360° AI Auto-Tracker (₹1,999).\n\n📍 Delivery to:\n{{delivery_address}}, {{city}} ({{pincode}})\n\nTo ensure our courier team dispatches your package immediately, please reply with *'CONFIRM'*.\n\n_(Note: If unconfirmed within 24 hrs, order will be automatically cancelled)._",
+    "2_cod_verified_success": "Awesome, {{customer_name}}! 🎉 Your order {{order_id}} is confirmed and sent to our fulfillment hub. You'll receive your tracking details once dispatched. Thank you for supporting Snagged!",
+    "3_order_shipped_with_awb": "Good news {{customer_name}}! 📦 Your Snagged™ AI Auto-Tracker is on its way via {{courier_name}}.\n\nTracking AWB: {{awb_number}}\nLive Link: {{tracking_link}}\n\nEstimated Delivery: 3-5 business days. Please keep ₹1,999 (Cash or UPI) ready for the delivery partner.",
+    "4_out_for_delivery_alert": "Knock knock! 🔔 {{customer_name}}, your Snagged package is OUT FOR DELIVERY today by {{courier_name}} executive ({{driver_phone}}).\n\n💰 Amount to pay: ₹1,999 (Cash or GPay/PhonePe/Paytm accepted).\n\nPlease make sure someone is available at your address.",
+    "5_delivery_attempt_failed": "Hi {{customer_name}}, the delivery executive attempted to deliver your Snagged package today but couldn't reach you. ⚠️\n\nThey will re-attempt tomorrow. Please reply to this message if you need us to change the delivery time or update your landmark.",
+    "6_delivered_feedback": "Woohoo! 🥳 Your Snagged™ AI Auto-Tracker has been delivered. We hope it elevates your content game!\n\nHere is a quick 1-minute video guide on how to use gesture controls: {{guide_link}}\n\nNeed help? Just reply to this chat!",
+    "7_rto_cancellation_warning": "Hi {{customer_name}}, our courier has made 2 attempts to deliver your package at {{city}}. If not accepted tomorrow, the order will be returned to hub. Please confirm if you still want it: Reply YES or NO.",
+    "8_return_replacement_request": "Hello {{customer_name}}, we're sorry to hear you're experiencing an issue. As per our 7-day replacement policy, please share:\n1. A short unboxing or working video showing the issue.\n2. A photo of the shipping label on the box.\nOur technical team will review and approve a free replacement within 24 hours.",
+    "9_delayed_order_update": "Hi {{customer_name}}, update on your order {{order_id}}: Due to local transit delays, your delivery is slightly delayed by 24-48 hours. Your new expected delivery date is {{new_date}}. We apologize for the wait!",
+    "10_prepaid_discount_offer": "Hey {{customer_name}}! Save ₹100 on your order {{order_id}}! Pay online via UPI (GPay/PhonePe) right now for ₹1,899 instead of ₹1,999 COD. Reply *'UPI'* to get the direct payment link.",
+    "11_wrong_address_clarification": "Hi {{customer_name}}, the courier team reported that your address is incomplete (missing house number or street name). Could you please reply with your exact full address and landmark?",
+    "12_customer_support_greeting": "Hi! You've reached Snagged Customer Support. How can we help you today with your order or product inquiries?"
+  }
+}
