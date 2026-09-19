@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snagged — Creator Tech That Thinks</title>
+  <meta name="title" content="Snagged — Creator Tech That Thinks" />
+  <meta name="description" content="Snagged is an Indian DTC brand building intelligent hardware for solo creators. AI tracking mounts, studio accessories, and tools that replace a film crew." />
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://snagged-store.vercel.app/" />
+  <meta property="og:site_name" content="Snagged" />
+  <meta property="og:title" content="Snagged — Creator Tech That Thinks" />
+  <meta property="og:description" content="Snagged is an Indian DTC brand building intelligent hardware for solo creators. AI tracking mounts, studio accessories, and tools that replace a film crew." />
+  <meta property="og:image" content="https://snagged-store.vercel.app/og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://snagged-store.vercel.app/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Snagged Creator Hardware" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://snagged-store.vercel.app/" />
+  <meta name="twitter:title" content="Snagged — Creator Tech That Thinks" />
+  <meta name="twitter:description" content="Snagged is an Indian DTC brand building intelligent hardware for solo creators. AI tracking mounts, studio accessories, and tools that replace a film crew." />
+  <meta name="twitter:image" content="https://snagged-store.vercel.app/og-image.jpg" />
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon-32x32.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+            mono: ['"Space Mono"', 'monospace'],
+          },
+          colors: {
+            canvas: { 50: '#FAF8F5', 100: '#F3F0EB', 200: '#E8E3DC', 300: '#D4CEC5' },
+            ink: { 950: '#1A1814', 900: '#2C2822', 800: '#3D3830', 700: '#56504A', 600: '#7A746C', 500: '#9E978E', 400: '#B8B1A8', 300: '#CFC9C0' },
+            ember: { DEFAULT: '#C2653A', light: '#D98A65', dark: '#9B4E2B' },
+            sage: { DEFAULT: '#6B7F5E', soft: '#F0F4ED' },
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --spring-snappy: cubic-bezier(0.22, 0.61, 0.36, 1);
+      --spring-gentle: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    body { background: #FAF8F5; color: #1A1814; }
+    ::selection { background: #C2653A; color: #FAF8F5; }
+    .btn-tactile { transition: transform 180ms var(--spring-snappy); }
+    .btn-tactile:active { transform: scale(0.975); }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 600ms var(--spring-gentle), transform 600ms var(--spring-gentle); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .product-card:hover .card-img-hover { opacity: 1; }
+    .product-card:hover .card-img-main { opacity: 0; }
+    .card-img-main, .card-img-hover { transition: opacity 400ms var(--spring-gentle); }
+    .card-img-hover { opacity: 0; }
+    .product-card:hover .quick-add { opacity: 1; transform: translateY(0); }
+    .quick-add { opacity: 0; transform: translateY(8px); transition: all 250ms var(--spring-snappy); }
+    .fluid-hero { font-size: clamp(2.6rem, 5.5vw + 0.5rem, 5.5rem); line-height: 1.05; letter-spacing: -0.04em; }
+    .fluid-section { font-size: clamp(1.6rem, 3vw + 0.3rem, 3rem); line-height: 1.1; letter-spacing: -0.03em; }
+    details summary::-webkit-details-marker { display: none; }
+    details summary { list-style: none; }
+  </style>
+
+  <!-- ════════════════════════════════════════════════════
+       ANALYTICS & TRACKING ENGINE (Phase 11)
+       ════════════════════════════════════════════════════ -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'PIXEL_ID_HERE'); // TODO: Replace with your Meta Pixel ID
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID_HERE&ev=PageView&noscript=1"/></noscript>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // TODO: Replace with your GA4 ID
+  </script>
+</head>
+
+<body class="font-sans antialiased">
+
+  <!-- ═══ HEADER — Brand-level navigation ═══ -->
+  <header class="sticky top-0 z-50 border-b border-canvas-200/60 bg-canvas-50/85 backdrop-blur-lg">
+    <div class="max-w-[1400px] mx-auto flex items-center justify-between px-5 sm:px-8 h-16">
+      <nav class="hidden md:flex items-center gap-7">
+        <a href="#products" class="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-600 hover:text-ink-950 transition-colors">Products</a>
+        <a href="#about" class="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-600 hover:text-ink-950 transition-colors">About</a>
+        <a href="#support" class="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-600 hover:text-ink-950 transition-colors">Support</a>
+      </nav>
+
+      <a href="#" class="absolute left-1/2 -translate-x-1/2 flex items-baseline gap-1">
+        <span class="font-serif italic text-2xl text-ink-950 tracking-tight">Snagged</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-ember -translate-y-1"></span>
+      </a>
+
+      <div class="flex items-center gap-5">
+        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="hidden sm:flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-600 hover:text-ink-950 transition-colors">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          Support
+        </a>
+        <a href="#products" class="btn-tactile bg-ink-950 text-canvas-50 font-mono text-[11px] uppercase tracking-[0.18em] px-5 py-2.5 rounded-sm hover:bg-ink-800 transition-colors">
+          Shop
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO — Brand-level, NOT product-specific ═══ -->
+    <section class="relative min-h-[88vh] flex flex-col justify-end overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-ink-950 via-ink-900 to-ink-800"></div>
+      <div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.4) 1px, transparent 0); background-size: 32px 32px;"></div>
+
+      <div class="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-8 pb-16 sm:pb-24 pt-32 w-full">
+        <span class="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-500 border border-ink-700 px-3 py-1.5 rounded-sm inline-block mb-8">Creator Hardware Lab — India</span>
+
+        <h1 class="fluid-hero font-serif text-canvas-50 max-w-[850px]">
+          Tools that replace<br/>
+          <span class="italic text-ember-light">your film crew.</span>
+        </h1>
+
+        <p class="mt-8 text-ink-400 text-base sm:text-lg max-w-[480px] leading-relaxed">
+          Snagged builds intelligent hardware for creators who work alone. AI-powered mounts, studio-grade accessories, and gear that thinks—so you can focus on creating.
+        </p>
+
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <a href="#products" class="btn-tactile bg-ember text-canvas-50 font-mono text-xs uppercase tracking-[0.18em] px-7 py-4 rounded-sm hover:bg-ember-dark transition-colors shadow-lg shadow-ember/20">
+            Browse All Products
+          </a>
+          <a href="#about" class="btn-tactile font-mono text-xs uppercase tracking-[0.18em] text-ink-400 hover:text-canvas-50 px-4 py-4 border-b border-ink-700 hover:border-ink-400 transition-colors">
+            Our Story
+          </a>
+        </div>
+
+        <div class="mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 font-mono text-[10px] tracking-[0.15em] uppercase text-ink-500">
+          <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-sage"></span> Free Pan-India Shipping</span>
+          <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-sage"></span> Cash on Delivery</span>
+          <span class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-sage"></span> 7-Day Replacement</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══ PRODUCTS CATALOG — Grid that scales with new products ═══ -->
+    <section id="products" class="py-24 sm:py-32">
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+
+        <div class="flex items-end justify-between mb-12 reveal">
+          <div>
+            <span class="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-500 block mb-3">The Catalog</span>
+            <h2 class="fluid-section font-serif text-ink-950">What we make.</h2>
+          </div>
+          <span class="font-mono text-[11px] tracking-[0.15em] uppercase text-ink-400 hidden sm:block">Showing all products</span>
+        </div>
+
+        <!-- Product Grid — asymmetric masonry-inspired -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+
+          <!-- ────── PRODUCT CARD 1: AI Auto-Tracker ────── -->
+          <a href="product-ai-tracker.html" class="product-card group block reveal">
+            <div class="relative aspect-[4/5] bg-canvas-100 border border-canvas-200 rounded-sm overflow-hidden">
+              <div class="card-img-main absolute inset-0 flex flex-col items-center justify-center p-8 bg-gradient-to-b from-canvas-100 to-canvas-200">
+                <div class="text-6xl mb-4">🤖</div>
+                <span class="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-500">360° AI Tracking</span>
+              </div>
+              <div class="card-img-hover absolute inset-0 flex flex-col items-center justify-center p-8 bg-gradient-to-b from-ink-900 to-ink-950">
+                <div class="text-5xl mb-3">👌</div>
+                <span class="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-400">Gesture Control Demo</span>
+              </div>
+              <span class="absolute top-3 left-3 font-mono text-[9px] tracking-[0.15em] uppercase bg-ink-950 text-canvas-50 px-2 py-1 rounded-sm">Bestseller</span>
+              <div class="quick-add absolute bottom-3 left-3 right-3">
+                <span class="block w-full text-center bg-ink-950/90 backdrop-blur-sm text-canvas-50 font-mono text-[10px] uppercase tracking-[0.15em] py-3 rounded-sm">View Product →</span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-sans text-sm font-medium text-ink-950 group-hover:text-ember transition-colors">Snagged™ 360° AI Auto-Tracker</h3>
+              <p class="font-mono text-[11px] text-ink-500 mt-1">Autonomous vision engine</p>
+              <div class="mt-2 flex items-baseline gap-2">
+                <span class="font-sans text-sm font-semibold text-ink-950">₹1,999</span>
+                <span class="font-mono text-[10px] text-sage font-bold ml-auto">COD</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- ────── PRODUCT CARD 2: Wireless Mic ────── -->
+          <a href="product-acoustic-system.html" class="product-card group block reveal">
+            <div class="relative aspect-[4/5] bg-canvas-100 border border-canvas-200 rounded-sm overflow-hidden">
+              <div class="card-img-main absolute inset-0 flex flex-col items-center justify-center p-8 bg-gradient-to-b from-canvas-100 to-canvas-200">
+                <div class="text-6xl mb-4">🎙️</div>
+                <span class="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-500">Dual Acoustic System</span>
+              </div>
+              <div class="card-img-hover absolute inset-0 flex flex-col items-center justify-center p-8 bg-gradient-to-b from-ink-900 to-ink-950">
+                <div class="text-5xl mb-3">⚡</div>
+                <span class="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-400">Plug & Play Receiver</span>
+              </div>
+              <div class="quick-add absolute bottom-3 left-3 right-3">
+                <span class="block w-full text-center bg-ink-950/90 backdrop-blur-sm text-canvas-50 font-mono text-[10px] uppercase tracking-[0.15em] py-3 rounded-sm">View Product →</span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-sans text-sm font-medium text-ink-950 group-hover:text-ember transition-colors">Snagged™ M1 Wireless Mics</h3>
+              <p class="font-mono text-[11px] text-ink-500 mt-1">Zero-pairing · 20m range</p>
+              <div class="mt-2 flex items-baseline gap-2">
+                <span class="font-sans text-sm font-semibold text-ink-950">₹1,499</span>
+                <span class="font-mono text-[10px] text-sage font-bold ml-auto">COD</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- ────── PRODUCT CARD 3: Magnetic Light ────── -->
+          <a href="product-lumen-block.html" class="product-card group block reveal">
+            <div class="relative aspect-[4/5] bg-canvas-100 border border-canvas-200 rounded-sm overflow-hidden">
+              <div class="card-img-main absolute inset-0 flex flex-col items-center justify-center p-8 bg-gradient-to-b from-canvas-100 to-canvas-200">
+                <div class="text-6xl mb-4">💡</div>
+                <span class="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-500">Magnetic Lumen Block</span>
+              </div>
+              <div class="card-img-hover absolute inset-0 flex flex-col items-center justify-center p-8 bg-gradient-to-b from-ink-900 to-ink-950">
+                <div class="text-5xl mb-3">🧲</div>
+                <span class="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-400">Mounts to any metal</span>
+              </div>
+              <div class="quick-add absolute bottom-3 left-3 right-3">
+                <span class="block w-full text-center bg-ink-950/90 backdrop-blur-sm text-canvas-50 font-mono text-[10px] uppercase tracking-[0.15em] py-3 rounded-sm">View Product →</span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-sans text-sm font-medium text-ink-950 group-hover:text-ember transition-colors">Snagged™ L1 Pocket Light</h3>
+              <p class="font-mono text-[11px] text-ink-500 mt-1">Bi-color · Rechargeable</p>
+              <div class="mt-2 flex items-baseline gap-2">
+                <span class="font-sans text-sm font-semibold text-ink-950">₹1,199</span>
+                <span class="font-mono text-[10px] text-sage font-bold ml-auto">COD</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- ────── PRODUCT CARD 4: Desk Rig ────── -->
+          <a href="product-desk-rig.html" class="product-card group block reveal">
+            <div class="relative aspect-[4/5] bg-canvas-100 border border-canvas-200 rounded-sm overflow-hidden">
+              <div class="card-img-main absolute inset-0 flex flex-col items-center justify-center p-8 bg-gradient-to-b from-canvas-100 to-canvas-200">
+                <div class="text-6xl mb-4">🦾</div>
+                <span class="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-500">Articulating Desk Rig</span>
+              </div>
+              <div class="card-img-hover absolute inset-0 flex flex-col items-center justify-center p-8 bg-gradient-to-b from-ink-900 to-ink-950">
+                <div class="text-5xl mb-3">🏗️</div>
+                <span class="font-mono text-[10px] tracking-[0.15em] uppercase text-ink-400">100% Metal Construction</span>
+              </div>
+              <div class="quick-add absolute bottom-3 left-3 right-3">
+                <span class="block w-full text-center bg-ink-950/90 backdrop-blur-sm text-canvas-50 font-mono text-[10px] uppercase tracking-[0.15em] py-3 rounded-sm">View Product →</span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h3 class="font-sans text-sm font-medium text-ink-950 group-hover:text-ember transition-colors">Snagged™ R1 Overhead Arm</h3>
+              <p class="font-mono text-[11px] text-ink-500 mt-1">Zero sag · Mechanical lock</p>
+              <div class="mt-2 flex items-baseline gap-2">
+                <span class="font-sans text-sm font-semibold text-ink-950">₹1,799</span>
+                <span class="font-mono text-[10px] text-sage font-bold ml-auto">COD</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══ BRAND VALUES STRIP — Why Snagged exists ═══ -->
+    <section class="border-y border-canvas-200 bg-canvas-100 py-16 sm:py-20">
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 reveal">
+          <div>
+            <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-ink-500 block mb-3">01 — Hardware First</span>
+            <p class="text-sm text-ink-700 leading-relaxed">Every Snagged product runs entirely on onboard silicon. No companion apps. No cloud dependencies. No subscriptions. Your data stays on your phone.</p>
+          </div>
+          <div>
+            <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-ink-500 block mb-3">02 — Built for India</span>
+            <p class="text-sm text-ink-700 leading-relaxed">Cash on Delivery across 28,000+ pin codes. Indian courier partners. WhatsApp-first support. Priced for working creators, not trust-fund hobbyists.</p>
+          </div>
+          <div>
+            <span class="font-mono text-[10px] tracking-[0.2em] uppercase text-ink-500 block mb-3">03 — Honest Engineering</span>
+            <p class="text-sm text-ink-700 leading-relaxed">We publish exact specs, not marketing adjectives. If we haven't bench-tested a number, it doesn't go on the product page. No inflated claims.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══ ABOUT — Brand story, NOT a product pitch ═══ -->
+    <section id="about" class="py-24 sm:py-32">
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 reveal">
+          <div class="md:col-span-5">
+            <span class="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-500 block mb-4">About Snagged</span>
+            <h2 class="fluid-section font-serif text-ink-950">
+              We started because we were <span class="italic">tired of asking strangers</span> to hold our phones.
+            </h2>
+          </div>
+          <div class="md:col-span-6 md:col-start-7 space-y-5 text-sm text-ink-600 leading-relaxed md:mt-4">
+            <p>
+              Snagged was born out of a specific frustration: two creators in India who spent more time setting up shots than actually filming. Every "smart" gadget we tried needed an app, a Bluetooth connection, or a firmware update before it worked. Most of them didn't track reliably past 2 metres.
+            </p>
+            <p>
+              So we started sourcing and testing hardware that prioritises function over features. Products that work the moment you turn them on. No accounts. No logins. No data leaving your device.
+            </p>
+            <p>
+              Every product in the Snagged catalog is something we personally use, have tested for durability, and would hand to a friend without a disclaimer. If a product doesn't meet that bar, it doesn't make it to the site.
+            </p>
+            <p class="font-medium text-ink-950">
+              We're two partners, building from India, for Indian creators.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══ HOW COD WORKS — Trust builder for all products ═══ -->
+    <section class="bg-ink-950 text-canvas-50 py-20 sm:py-28">
+      <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+        <div class="max-w-lg mb-14 reveal">
+          <span class="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-500 block mb-4">How It Works</span>
+          <h2 class="fluid-section font-serif text-canvas-50">
+            Order any product.<br/><span class="italic text-ember-light">Pay only at your door.</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
+          <div class="bg-ink-900 border border-ink-800 p-6 rounded-sm">
+            <div class="font-mono text-ember text-2xl font-bold mb-3">01</div>
+            <h4 class="font-sans text-sm font-semibold text-canvas-50 mb-2">Place Your Order</h4>
+            <p class="text-xs text-ink-400 leading-relaxed">Pick your product, fill in your address. No payment or card details required at this stage.</p>
+          </div>
+          <div class="bg-ink-900 border border-ink-800 p-6 rounded-sm">
+            <div class="font-mono text-ember text-2xl font-bold mb-3">02</div>
+            <h4 class="font-sans text-sm font-semibold text-canvas-50 mb-2">WhatsApp Verification</h4>
+            <p class="text-xs text-ink-400 leading-relaxed">You get a WhatsApp message within 60 seconds. Reply "CONFIRM" and we dispatch within 24 hours.</p>
+          </div>
+          <div class="bg-ink-900 border border-ink-800 p-6 rounded-sm">
+            <div class="font-mono text-ember text-2xl font-bold mb-3">03</div>
+            <h4 class="font-sans text-sm font-semibold text-canvas-50 mb-2">Live Tracking</h4>
+            <p class="text-xs text-ink-400 leading-relaxed">AWB tracking number sent via WhatsApp + SMS. Track your parcel in real-time via courier partner.</p>
+          </div>
+          <div class="bg-ink-900 border border-ink-800 p-6 rounded-sm">
+            <div class="font-mono text-ember text-2xl font-bold mb-3">04</div>
+            <h4 class="font-sans text-sm font-semibold text-canvas-50 mb-2">Pay at Doorstep</h4>
+            <p class="text-xs text-ink-400 leading-relaxed">Hand over cash or scan UPI to the delivery executive. If anything's wrong, 7-day free replacement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══ SUPPORT / FAQ — Brand-level ═══ -->
+    <section id="support" class="py-24 sm:py-32">
+      <div class="max-w-[700px] mx-auto px-5 sm:px-8">
+        <span class="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-500 block mb-4">Support</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-ink-950 tracking-tight leading-[1.1] mb-10">
+          Questions about any product?<br/>We'd rather answer here.
+        </h2>
+
+        <div class="divide-y divide-canvas-200">
+          <details class="group py-5 reveal">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <span class="font-sans text-sm font-medium text-ink-950 pr-8">What payment methods do you accept?</span>
+              <span class="shrink-0 w-6 h-6 rounded-full border border-canvas-300 flex items-center justify-center font-mono text-xs text-ink-500 group-open:rotate-45 transition-transform duration-300">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-ink-600 leading-relaxed">All products ship via Cash on Delivery (COD). At the doorstep, you can pay via cash or UPI (GPay, PhonePe, Paytm). We're working on integrating prepaid online payments — once our GST registration is complete, we'll add Razorpay for cards and UPI checkout.</p>
+          </details>
+          <details class="group py-5 reveal">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <span class="font-sans text-sm font-medium text-ink-950 pr-8">What is your return and replacement policy?</span>
+              <span class="shrink-0 w-6 h-6 rounded-full border border-canvas-300 flex items-center justify-center font-mono text-xs text-ink-500 group-open:rotate-45 transition-transform duration-300">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-ink-600 leading-relaxed">Every product has a 7-Day Free Replacement policy for transit damage or hardware defects. Send us an unboxing video via WhatsApp and we'll dispatch a replacement. No troubleshooting hoops.</p>
+          </details>
+          <details class="group py-5 reveal">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <span class="font-sans text-sm font-medium text-ink-950 pr-8">How long does delivery take?</span>
+              <span class="shrink-0 w-6 h-6 rounded-full border border-canvas-300 flex items-center justify-center font-mono text-xs text-ink-500 group-open:rotate-45 transition-transform duration-300">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-ink-600 leading-relaxed">3–5 business days for metro cities (Delhi NCR, Mumbai, Bengaluru, Hyderabad, Chennai, Pune, Kolkata). 5–7 days for Tier 2/3 cities. Up to 9 days for remote or North-East regions. All orders dispatch within 24 hours of WhatsApp confirmation.</p>
+          </details>
+          <details class="group py-5 reveal">
+            <summary class="flex items-center justify-between cursor-pointer">
+              <span class="font-sans text-sm font-medium text-ink-950 pr-8">How do I contact support?</span>
+              <span class="shrink-0 w-6 h-6 rounded-full border border-canvas-300 flex items-center justify-center font-mono text-xs text-ink-500 group-open:rotate-45 transition-transform duration-300">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-ink-600 leading-relaxed">WhatsApp is our primary channel — fastest response, usually within 30 minutes during 10 AM – 7 PM IST. You can also email support@getsnagged.in for non-urgent queries.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="border-t border-canvas-200 py-10">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <span class="font-serif italic text-lg text-ink-950">Snagged<span class="text-ember">.</span></span>
+          <span class="font-mono text-[10px] tracking-[0.1em] uppercase text-ink-400">© 2026 · Creator Hardware from India</span>
+        </div>
+        <div class="flex items-center gap-6 font-mono text-[10px] tracking-[0.15em] uppercase text-ink-500">
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="hover:text-ink-950 transition-colors">WhatsApp</a>
+          <a href="#" class="hover:text-ink-950 transition-colors">Shipping</a>
+          <a href="#" class="hover:text-ink-950 transition-colors">Returns</a>
+          <a href="#" class="hover:text-ink-950 transition-colors">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky shop bar -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-canvas-50/95 backdrop-blur-lg border-t border-canvas-200 px-4 py-3 flex items-center justify-between">
+    <div>
+      <div class="font-serif text-lg text-ink-950">Snagged<span class="text-ember">.</span></div>
+      <div class="font-mono text-[9px] tracking-[0.15em] uppercase text-ink-500">Creator Hardware</div>
+    </div>
+    <a href="#products" class="btn-tactile bg-ink-950 text-canvas-50 font-mono text-[11px] uppercase tracking-[0.18em] px-6 py-3 rounded-sm">
+      Shop Now
+    </a>
+  </div>
+
+  <script>
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
