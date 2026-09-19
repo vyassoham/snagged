@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://getsnagged.vercel.app/sitemap.xml
